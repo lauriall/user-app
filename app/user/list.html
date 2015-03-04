@@ -1,0 +1,24 @@
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>E-mail</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="user in users">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.email}}</td>
+        <td><a ng-href="#/users/{{user.id}}">Edit</a></td>
+    </tr>
+    <tr>
+        <td colspan="4">
+            <a ng-href="#/users/new">New</a>
+        </td>
+    </tr>
+    </tbody>
+</table>

@@ -1,0 +1,30 @@
+<form name="userEditForm" novalidate="true" autocomplete="off">
+<table>
+    <tr>
+        <td>Name:</td>
+        <td>
+            <input type="text" maxlength="50" required="true" min="1" ng-model="user.name" />
+        </td>
+    </tr>
+    <tr>
+        <td>Email:</td>
+        <td>
+            <input type="text" maxlength="50" required="true" min="1" ng-model="user.email" />
+        </td>
+    </tr>
+    <tr>
+        <td>Roles:</td>
+        <td>
+
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button ng-show="user.id !== undefined" ng-click="removeUser(user)">Delete</button>
+        </td>
+        <td>
+            <button ng-disabled="userEditForm.$invalid" ng-click="addUser(user)">Save</button>
+        </td>
+    </tr>
+</table>
+</form>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="userApp" class="no-js">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>UserApp</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div ng-view ></div>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="userApp.js"></script>
+
+    <script src="controllers/UserEditController.js"></script>
+    <script src="controllers/UserListController.js"></script>
+
+    <script src="services/UserService.js"></script>
+
+    <script src="Utils.js"></script>
+
+  </body>
+
+</html>

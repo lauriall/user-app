@@ -1,0 +1,10 @@
+{
+  "name": "user-app",
+  "description": "A small CRUD application",
+  "version": "0.0.1",
+  "dependencies": {
+    "angular": "1.2.x",
+    "angular-route": "1.2.x",
+    "angular-loader": "1.2.x"
+  }
+}
